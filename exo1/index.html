@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html ng-app="schoolApp">
+<html ng-app="schoolApp"> <!--ON APPELLE NOTRE MODULE -->
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Exercice 1</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
     <script src="assets/js/script.js"></script>
   </head>
   <body ng-controller="studentsCtrl">
     <div>
-      {{firstName}}
+      {{ firstName }} <!-- ON PEUT METTRE L'EXPRESSION DANS UN <P> OU AUTRE BALISE -->
     </div>
+<!-- 2EME METHODE  (PERMET D'AFFICHER UN RETOUR (SANS POUVOIR FAIRE DE PHRASE))-->
+<p ng-bind="firstName"></p>
 </body>
 </html>
